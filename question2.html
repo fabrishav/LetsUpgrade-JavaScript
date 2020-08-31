@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript assignment question 2</title>
+</head>
+<body>
+    <h3>Q2.Program to convert minutes to second</h3>
+    <div>
+        <lable>Enter a number:</lable>
+        <input type="number" id="id1">
+        <br>
+        <button onclick="Convert()"> Submit</button>
+        <p id="print"></p>
+        
+        
+    </div>
+    <script>
+        function Convert(){
+            var a = document.getElementById("id1").value;
+            var answer = a * 60;
+            document.getElementById("print").innerHTML = answer;
+        }
+    </script>
+    
+</body>
+</html>

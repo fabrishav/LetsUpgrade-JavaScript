@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript assignment question 3</title>
+</head>
+<body>
+    <h3>Q3.Program to search for a element in a array of strings</h3>
+    <div>
+        Search for a string:
+        <input type="text" id="find">
+        <button onclick="Search()">click</button>
+        <p id="abcd"></p>
+    </div>
+    <script>
+        function Search(){
+            let ar = ["Mango","Apple","Banana","Orange","Guava"];
+            var a = document.getElementById("find").value;
+            var show = ar.includes(a);
+            if(show)
+               document.getElementById("abcd").innerHTML = a + " is available in the array";
+            else
+               document.getElementById("abcd").innerHTML = a + " is not available in the array"; 
+        }
+    </script>
+</body>
+</html>

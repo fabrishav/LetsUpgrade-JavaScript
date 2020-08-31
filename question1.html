@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment question 1</title>
+</head>
+<body>
+    <h3>Q1.Program to search for a particular character in a string</h3>
+    <div>
+        <label>Enter your name:</label>
+        <input type="text" id="id1">
+                   
+        <label>Enter a character:</label>
+        <input type="text" id="id2"><br>
+        
+        <input type="submit" name="submit" onclick="Search()">
+        <p id="answer"></p>
+    </div>
+    <script>
+        function Search() {
+            var a = document.getElementById("id1").value;
+            var b = document.getElementById("id2").value;
+            var result = a.search(b);
+            document.getElementById("answer").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
